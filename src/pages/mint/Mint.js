@@ -467,19 +467,42 @@ const Mint = () => {
             {/* <img src={img1} alt="Mint" className="mint-img" /> */}
             <div className="row mint-bg">
               <div className="col-md-6">
-                <div className="row">
-                  {mints.slice(0, 51).map((el) => {
+                <div className="row boxes-container">
+                  {mints.slice(0, 50).map((el) => {
                     if (el.isSpaces) {
-                      var arrSpaces = new Array(el.spaces);
+                      var arrSpaces = new Array(el.spaces).fill(" ");
                       // console.log("new: ", el.spaces);
                       console.log("h:", arrSpaces.length);
                       return (
                         <div
                           key={el.id}
                           className="outerdiv"
-                          style={{ width: 40 * el.spaces + 1, height: 40 }}
+                          style={{
+                            width: 40 * (el.spaces + 1),
+                            height: 40,
+                            display: "flex",
+                            flexDirection: "row-reverse",
+                          }}
                         >
-                          {arrSpaces.map((sp, i) => {
+                          <div
+                            className="outerdiv"
+                            style={{
+                              width: 40,
+                              height: 40,
+                            }}
+                          >
+                            <div
+                              className="innerdiv"
+                              style={{
+                                width: 40,
+                                height: 40,
+                                backgroundColor: el.bgColor,
+                              }}
+                            >
+                              {el.value}
+                            </div>
+                          </div>
+                          {/* {arrSpaces.map((sp, i) => {
                             const isLastIndex = arrSpaces.length - 1 === i;
                             if (isLastIndex) {
                               return (
@@ -529,7 +552,7 @@ const Mint = () => {
                                 </div>
                               );
                             }
-                          })}
+                          })} */}
                         </div>
                       );
                     } else {
