@@ -1,0 +1,19 @@
+.mint-img {
+  max-width: 100%;
+  height: auto;
+}
+.minting-instructions-div {
+  margin-top: 25%;
+  border-left: 4px solid black;
+  padding-left: 4%;
+  padding-bottom: 0.1%;
+}
+.minting-instructions-img {
+  padding: 2% 60% 0% 0%;
+}
+.mint-bg {
+  background: url("../../assets/Mint/01Asset17.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}

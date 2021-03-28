@@ -1,0 +1,59 @@
+.gallery-detail-row {
+  background-color: #fff;
+  padding: 5%;
+}
+.gallery-detail span {
+  display: flex;
+  justify-content: center;
+}
+.gallery-detail span,
+.gallery-detail span > p {
+  text-shadow: 0 0 black;
+  font-size: larger;
+}
+.detail-img {
+  max-width: 100%;
+  height: auto;
+}
+.transaction-label {
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 0 black;
+  font-size: 18px;
+}
+.transaction-table {
+  border-spacing: 0px 12px;
+  border-collapse: separate;
+}
+.transaction-table th {
+  font-weight: 500;
+}
+.table-sm td,
+.table-sm th {
+  padding: 0.3rem 2rem !important;
+}
+
+.sold {
+  background-color: #73d3f3;
+}
+.bid {
+  background-color: #65c271;
+}
+.offered {
+  background-color: #f6bd67;
+}
+.claimed {
+  background-color: #ba9cca;
+}
+.sold,
+.bid,
+.offered,
+.claimed {
+  box-shadow: 12px 5px 12px #818080;
+  border-radius: 50px;
+}
+@media (min-width: 768px) {
+  .gallery-detail {
+    margin-top: 6%;
+  }
+}

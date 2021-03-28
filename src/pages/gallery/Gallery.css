@@ -1,0 +1,76 @@
+.wallet span,
+.gallery span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.wallet-img,
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+}
+.cards-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+  margin-top: -1.3rem;
+  padding: 0px 10%;
+}
+.mask-wallet {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 22px 15px; */
+  padding: 3% 3% 1.5% 1.5%;
+}
+.mask-wallet span {
+  display: flex;
+}
+.mask-wallet span > p {
+  font-weight: 500;
+}
+.redeem-btn {
+  background-color: #fff !important;
+  border: 1px solid #000 !important;
+  box-shadow: 4px 4px 12px #4b4b4b;
+  color: #000 !important;
+  border-radius: 50px !important;
+  width: 83%;
+}
+.redeem-btn:hover {
+  background-color: #f2efef !important;
+}
+.redeem-btn:focus {
+  border: 1px solid #000 !important;
+  box-shadow: 0 0 0 0rem rgb(163 163 164 / 50%) !important;
+}
+
+@media (min-width: 601px) {
+  .redeem-btn {
+    margin-left: 5%;
+  }
+  .m-t-12 {
+    margin-top: 2.8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mask-wallet {
+    flex-direction: column;
+  }
+  .cards-info {
+    margin-top: -1rem;
+  }
+}
+@media (max-width: 600px) {
+  .redeem-btn {
+    width: 75%;
+    margin-left: 8%;
+  }
+  .cards-info {
+    margin-top: -1.7rem;
+  }
+  .wallet span,
+  .gallery span {
+    font-size: 13px;
+  }
+}
