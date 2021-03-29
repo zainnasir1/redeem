@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/mint" component={Mint} />
         <Route exact path="/gallery" component={Gallery} />
         <Route exact path="/wallet" component={Wallet} />
-        <Route exact path="/gallery-detail" component={GalleryDetail} />
+        <Route exact path="/gallery-detail/:id" component={GalleryDetail} />
       </Switch>
     </Router>
   );

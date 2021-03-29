@@ -26,7 +26,7 @@ const Header = () => {
           <Nav.Link href="/mint">Mint</Nav.Link>
           <Nav.Link href="/gallery">Gallery</Nav.Link>
           <Nav.Link href="/wallet">Wallet</Nav.Link>
-          <Nav.Link href="/connect">Connect</Nav.Link>
+          <Nav.Link href="#">Connect</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

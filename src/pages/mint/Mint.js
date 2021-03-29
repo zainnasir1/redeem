@@ -1,583 +1,190 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import "./Mint.css";
 import Header from "../../components/header/Header";
-import img1 from "../../assets/Mint/01Asset17.png";
+// import img1 from "../../assets/Mint/01Asset17.png";
 import img2 from "../../assets/Mint/01Asset14.png";
+import { FiMapPin } from "react-icons/fi";
+import data from "./data";
 
 const Mint = () => {
-  const [mints, setMints] = useState([
-    {
-      id: "1",
-      value: "001",
-      status: "show",
-      bgColor: "#ffa92c",
-      isSpaces: true,
-      spaces: 4,
-    },
-    {
-      id: "2",
-      value: "002",
-      status: "show",
-      bgColor: "#00a8a8",
-      isSpaces: true,
-      spaces: 1,
-    },
-    {
-      id: "3",
-      value: "003",
-      status: "show",
-      bgColor: "#ffa92c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "4",
-      value: "004",
-      status: "show",
-      bgColor: "#002a38",
-      isSpaces: true,
-      spaces: 2,
-    },
-    {
-      id: "5",
-      value: "005",
-      status: "show",
-      bgColor: "#ffa92c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "6",
-      value: "006",
-      status: "show",
-      bgColor: "#8d0015",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "7",
-      value: "007",
-      status: "show",
-      bgColor: "#ffd595",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "8",
-      value: "008",
-      status: "show",
-      bgColor: "#ff3f2e",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "9",
-      value: "009",
-      status: "show",
-      bgColor: "#ff8332",
-      isSpaces: true,
-      spaces: 1,
-    },
-    {
-      id: "10",
-      value: "010",
-      status: "show",
-      bgColor: "#fe3f2e",
-      isSpaces: true,
-      spaces: 1,
-    },
-    {
-      id: "11",
-      value: "011",
-      status: "show",
-      bgColor: "#ffa92c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "12",
-      value: "012",
-      status: "show",
-      bgColor: "#002a38",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "13",
-      value: "013",
-      status: "show",
-      bgColor: "#00a8a8",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "14",
-      value: "014",
-      status: "show",
-      bgColor: "#002a38",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "15",
-      value: "015",
-      status: "show",
-      bgColor: "#008892",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "16",
-      value: "016",
-      status: "show",
-      bgColor: "#ff3f2e",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "17",
-      value: "017",
-      status: "show",
-      bgColor: "#ffd595",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "18",
-      value: "018",
-      status: "show",
-      bgColor: "#8d0015",
-      isSpaces: true,
-      spaces: 1,
-    },
-    {
-      id: "19",
-      value: "019",
-      status: "show",
-      bgColor: "#00a8a8",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "20",
-      value: "020",
-      status: "show",
-      bgColor: "#ff3f2e",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "21",
-      value: "021",
-      status: "show",
-      bgColor: "#ffa92c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "22",
-      value: "022",
-      status: "show",
-      bgColor: "#ff3f2e",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "23",
-      value: "023",
-      status: "show",
-      bgColor: "#00a8a8",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "24",
-      value: "024",
-      status: "show",
-      bgColor: "#fe3f2e",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "25",
-      value: "025",
-      status: "show",
-      bgColor: "#008892",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "26",
-      value: "026",
-      status: "show",
-      bgColor: "#ffa92c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "27",
-      value: "027",
-      status: "show",
-      bgColor: "#008690",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "28",
-      value: "028",
-      status: "show",
-      bgColor: "#002a38",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "29",
-      value: "029",
-      status: "show",
-      bgColor: "#fea82c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "30",
-      value: "030",
-      status: "show",
-      bgColor: "#ffd595",
-      isSpaces: true,
-      spaces: 1,
-    },
-    {
-      id: "31",
-      value: "031",
-      status: "show",
-      bgColor: "#002a38",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "32",
-      value: "032",
-      status: "show",
-      bgColor: "#ff3f2e",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "33",
-      value: "033",
-      status: "show",
-      bgColor: "#00a8a8",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "34",
-      value: "034",
-      status: "show",
-      bgColor: "#fcd293",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "35",
-      value: "035",
-      status: "show",
-      bgColor: "#ff8332",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "36",
-      value: "036",
-      status: "show",
-      bgColor: "#ff3f2e",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "37",
-      value: "037",
-      status: "show",
-      bgColor: "#ffa92c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "38",
-      value: "038",
-      status: "show",
-      bgColor: "#00a7a7",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "39",
-      value: "039",
-      status: "show",
-      bgColor: "#8d0015",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "40",
-      value: "040",
-      status: "show",
-      bgColor: "#002a38",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "41",
-      value: "041",
-      status: "show",
-      bgColor: "#00a3a3",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "42",
-      value: "042",
-      status: "show",
-      bgColor: "#ffd595",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "43",
-      value: "043",
-      status: "show",
-      bgColor: "#ff3f2e",
-      isSpaces: true,
-      spaces: 1,
-    },
-    {
-      id: "44",
-      value: "044",
-      status: "show",
-      bgColor: "#ffa92c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "45",
-      value: "045",
-      status: "show",
-      bgColor: "#8d0015",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "46",
-      value: "046",
-      status: "show",
-      bgColor: "#ffa92c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "47",
-      value: "047",
-      status: "show",
-      bgColor: "#00848e",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "48",
-      value: "048",
-      status: "show",
-      bgColor: "#ff8332",
-      isSpaces: true,
-      spaces: 1,
-    },
-    {
-      id: "49",
-      value: "049",
-      status: "show",
-      bgColor: "#002a38",
-      isSpaces: false,
-      spaces: 0,
-    },
-    {
-      id: "50",
-      value: "050",
-      status: "show",
-      bgColor: "#fea82c",
-      isSpaces: false,
-      spaces: 0,
-    },
-    { id: "51", value: "051", status: "show", bgColor: "#ffa92c" },
-    { id: "52", value: "052", status: "show", bgColor: "#002a38" },
-    { id: "53", value: "053", status: "show", bgColor: "#ff8332" },
-    { id: "54", value: "054", status: "show", bgColor: "#008892" },
-    { id: "55", value: "055", status: "show", bgColor: "#fca72b" },
-    { id: "56", value: "056", status: "show", bgColor: "#8d0015" },
-    { id: "57", value: "057", status: "show", bgColor: "#ffa92c" },
-    { id: "58", value: "058", status: "show", bgColor: "#ff3f2e " },
-    { id: "59", value: "059", status: "show", bgColor: "#ffd595 " },
-    { id: "60", value: "060", status: "show", bgColor: "#49a7ca" },
-    { id: "61", value: "061", status: "show", bgColor: "#002a38" },
-    { id: "62", value: "062", status: "show", bgColor: "#8d0015" },
-    { id: "63", value: "063", status: "show", bgColor: "#00a3a3" },
-    { id: "64", value: "064", status: "show", bgColor: "#ffa92c" },
-    { id: "65", value: "065", status: "show", bgColor: "#ff3f2e" },
-    { id: "66", value: "066", status: "show", bgColor: "#ff8332" },
-    { id: "67", value: "067", status: "show", bgColor: "#fcd293" },
-    { id: "68", value: "068", status: "show", bgColor: "#00a8a8" },
-    { id: "69", value: "069", status: "show", bgColor: "#ff3f2e" },
-    { id: "70", value: "070", status: "show", bgColor: "#002a38" },
-    { id: "71", value: "071", status: "show", bgColor: "#fcd293" },
-    { id: "72", value: "072", status: "show", bgColor: "#fca72b" },
-    { id: "73", value: "073", status: "show", bgColor: "#002a38" },
-    { id: "74", value: "074", status: "show", bgColor: "#499cc2" },
-    { id: "75", value: "075", status: "show", bgColor: "#ffa92c" },
-    { id: "76", value: "076", status: "show", bgColor: "#008892" },
-    { id: "77", value: "077", status: "show", bgColor: "#fc3e2d" },
-    { id: "78", value: "078", status: "show", bgColor: "#00a8a8" },
-    { id: "79", value: "079", status: "show", bgColor: "#ff3f2e" },
-    { id: "80", value: "080", status: "show", bgColor: "#ffa92c" },
-    { id: "81", value: "081", status: "show", bgColor: "#ff3f2e" },
-    { id: "82", value: "082", status: "show", bgColor: "#00a8a8" },
-    { id: "83", value: "083", status: "show", bgColor: "#8d0015" },
-    { id: "84", value: "084", status: "show", bgColor: "#ffd595" },
-    { id: "85", value: "085", status: "show", bgColor: "#ff3f2e" },
-    { id: "86", value: "086", status: "show", bgColor: "#008892" },
-    { id: "87", value: "087", status: "show", bgColor: "#002a38" },
-    { id: "88", value: "088", status: "show", bgColor: "#00a4a4" },
-    { id: "89", value: "089", status: "show", bgColor: "#002a38" },
-    { id: "90", value: "090", status: "show", bgColor: "#fea82c" },
-    { id: "91", value: "091", status: "show", bgColor: "#f43c2c" },
-    { id: "92", value: "092", status: "show", bgColor: "#ff8332" },
-    { id: "93", value: "093", status: "show", bgColor: "#f83d2d" },
-    { id: "94", value: "094", status: "show", bgColor: "#ffd595" },
-    { id: "95", value: "095", status: "show", bgColor: "#8d0015" },
-    { id: "96", value: "096", status: "show", bgColor: "#ffa92c" },
-    { id: "97", value: "097", status: "show", bgColor: "#002a38" },
-    { id: "98", value: "098", status: "show", bgColor: "#ffa92c" },
-    { id: "99", value: "099", status: "show", bgColor: "#00a8a8" },
-    { id: "100", value: "100", status: "show", bgColor: "#fea82c" },
-  ]);
+  const [noOfHidden, setNoOfHidden] = useState(0);
+  const [mints, setMints] = useState();
+
+  useEffect(() => {
+    setMints(data.mintData);
+  }, []);
+
+  const hide = (selectedBox) => {
+    var newMintdata = mints.map((ele) =>
+      ele.id === selectedBox.id ? { ...ele, status: "hide" } : { ...ele }
+    );
+    var countHidden = mints.filter((ele) => ele.status === "hide");
+
+    setNoOfHidden(countHidden.length);
+    setMints(newMintdata);
+    console.log("selecedBox: ", countHidden.length);
+  };
   return (
     <>
       <Header />
       <div className="container-fluid">
         <Row>
           <Col lg="8">
-            {/* <img src={img1} alt="Mint" className="mint-img" /> */}
             <div className="row mint-bg">
               <div className="col-md-6">
                 <div className="row boxes-container">
-                  {mints.slice(0, 50).map((el) => {
-                    if (el.isSpaces) {
-                      var arrSpaces = new Array(el.spaces).fill(" ");
-                      // console.log("new: ", el.spaces);
-                      console.log("h:", arrSpaces.length);
-                      return (
-                        <div
-                          key={el.id}
-                          className="outerdiv"
-                          style={{
-                            width: 40 * (el.spaces + 1),
-                            height: 40,
-                            display: "flex",
-                            flexDirection: "row-reverse",
-                          }}
-                        >
+                  {mints &&
+                    mints.slice(0, 50).map((el) => {
+                      if (el.isSpaces) {
+                        return (
                           <div
+                            key={el.id}
                             className="outerdiv"
                             style={{
-                              width: 40,
+                              width: 40 * (el.spaces + 1),
                               height: 40,
+                              display: "flex",
+                              flexDirection: "row-reverse",
                             }}
                           >
                             <div
-                              className="innerdiv"
+                              className="outerdiv"
                               style={{
                                 width: 40,
                                 height: 40,
-                                backgroundColor: el.bgColor,
                               }}
                             >
-                              {el.value}
+                              {el && el.status === "show" && (
+                                <div
+                                  onClick={() => hide(el)}
+                                  className="innerdiv"
+                                  style={{
+                                    width: 40,
+                                    height: 40,
+                                    backgroundColor: el.bgColor,
+                                    color: "#fff",
+                                    fontWeight: "500",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                  }}
+                                >
+                                  {el.value}
+                                </div>
+                              )}
                             </div>
                           </div>
-                          {/* {arrSpaces.map((sp, i) => {
-                            const isLastIndex = arrSpaces.length - 1 === i;
-                            if (isLastIndex) {
-                              return (
-                                <Fragment key={sp.id + i}>
-                                  <div
-                                    className="outerdiv"
-                                    style={{ width: 40, height: 40 }}
-                                  >
-                                    <div
-                                      className="lastspace"
-                                      style={{
-                                        width: 40,
-                                        height: 40,
-                                      }}
-                                    ></div>
-                                  </div>
-                                  <div
-                                    className="outerdiv"
-                                    style={{ width: 40, height: 40 }}
-                                  >
-                                    <div
-                                      className="innerdiv"
-                                      style={{
-                                        width: 40,
-                                        height: 40,
-                                        backgroundColor: el.bgColor,
-                                      }}
-                                    >
-                                      {el.value}
-                                    </div>
-                                  </div>
-                                </Fragment>
-                              );
-                            } else {
-                              return (
-                                <div
-                                  className="outerdiv"
-                                  style={{ width: 40, height: 40 }}
-                                >
-                                  <div
-                                    className="innerSapce"
-                                    style={{
-                                      width: 40,
-                                      height: 40,
-                                    }}
-                                  ></div>
-                                </div>
-                              );
-                            }
-                          })} */}
-                        </div>
-                      );
-                    } else {
-                      return (
-                        <div
-                          className="outerdiv"
-                          style={{ width: 40, height: 40 }}
-                        >
+                        );
+                      } else {
+                        return (
                           <div
-                            className="innerdiv"
-                            style={{
-                              width: 40,
-                              height: 40,
-                              backgroundColor: el.bgColor,
-                            }}
+                            className="outerdiv"
+                            style={{ width: 40, height: 40 }}
                           >
-                            {el.value}
+                            {el && el.status === "show" && (
+                              <div
+                                onClick={() => hide(el)}
+                                className="innerdiv"
+                                style={{
+                                  width: 40,
+                                  height: 40,
+                                  backgroundColor: el.bgColor,
+                                  color: "#fff",
+                                  fontWeight: "500",
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                }}
+                              >
+                                {el.value}
+                              </div>
+                            )}
                           </div>
-                        </div>
-                      );
-                    }
-                  })}
+                        );
+                      }
+                    })}
                 </div>
               </div>
-              <div className="col-md-6"></div>
+              <div className="col-md-6">
+                <div
+                  className="row "
+                  style={{ margin: "31.1% 0% 0% 0%", padding: "0% 21% 0% 16%" }}
+                >
+                  {mints &&
+                    mints.slice(50, 100).map((el) => {
+                      if (el.isSpaces) {
+                        // var arrSpaces = new Array(el.spaces).fill(" ");
+                        // console.log("h:", arrSpaces.length);
+                        return (
+                          <div
+                            key={el.id}
+                            className="outerdiv"
+                            style={{
+                              width: 40 * (el.spaces + 1),
+                              height: 40,
+                              display: "flex",
+                              flexDirection: "row-reverse",
+                            }}
+                          >
+                            <div
+                              className="outerdiv"
+                              style={{
+                                width: 40,
+                                height: 40,
+                              }}
+                            >
+                              {el && el.status === "show" && (
+                                <div
+                                  onClick={() => hide(el)}
+                                  className="innerdiv"
+                                  style={{
+                                    width: 40,
+                                    height: 40,
+                                    backgroundColor: el.bgColor,
+                                    color: "#fff",
+                                    fontWeight: "500",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                  }}
+                                >
+                                  {el.value}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      } else {
+                        return (
+                          <div
+                            className="outerdiv"
+                            style={{ width: 40, height: 40 }}
+                          >
+                            {el && el.status === "show" && (
+                              <div
+                                onClick={() => hide(el)}
+                                className="innerdiv"
+                                style={{
+                                  width: 40,
+                                  height: 40,
+                                  backgroundColor: el.bgColor,
+                                  color: "#fff",
+                                  fontWeight: "500",
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                }}
+                              >
+                                {el.value}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      }
+                    })}
+                </div>
+              </div>
             </div>
           </Col>
           <Col lg="4">
@@ -619,6 +226,257 @@ const Mint = () => {
                   <br />
                   having their <b>numbers disappeared.</b>
                 </p>
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="ml-2">
+            {/* <div
+              style={{
+                height: "38px",
+                marginTop: "75px",
+                marginBottom: "32px",
+                border: "4px solid black",
+              }}
+            ></div> */}
+            <div
+              className="row container-row mt-5 pl-2 pr-2"
+              style={{ position: "relative", margin: "0 auto" }}
+            >
+              <div
+                className="row pl-2 pr-2"
+                style={{ height: "38px", width: "100% " }}
+              >
+                <div
+                  style={{
+                    width: "4%",
+                    backgroundColor: "#f2f2f2",
+                    border: "2px solid #f2f2f2",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "5%",
+                    backgroundColor: "#e6e6e6",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "7%",
+                    backgroundColor: "#cccccc",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "20%",
+                    backgroundColor: "#b3b3b3",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "25%",
+                    backgroundColor: "#999999",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "30%",
+                    backgroundColor: "#808080",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "3%",
+                    backgroundColor: "#666666",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "3%",
+                    backgroundColor: "#4d4d4d",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "2%",
+                    backgroundColor: "#333333",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "1%",
+                    backgroundColor: "#1a1a1a",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+              </div>
+              <div
+                className="row row-absolute pr-2 pl-2"
+                style={{
+                  position: "absolute",
+                  top: "-20px",
+                  right: 0,
+                  width: "100%",
+                }}
+              >
+                <div
+                  className="row-dynamic-width"
+                  style={{
+                    height: "38px",
+                    width: noOfHidden + "%",
+                    display: "flex",
+                    flexDirection: "row-reverse",
+                  }}
+                >
+                  <div className="absolute-icon">
+                    <FiMapPin style={{ fontSize: "32px" }} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col className="ml-2">
+            {/* <div
+              style={{
+                height: "38px",
+                marginTop: "75px",
+                marginBottom: "32px",
+                border: "4px solid black",
+              }}
+            ></div> */}
+            <div
+              className="row container-row mt-5 pl-2 pr-2"
+              style={{ position: "relative", margin: "0 auto" }}
+            >
+              <div
+                className="row pl-2 pr-2"
+                style={{ height: "38px", width: "100% " }}
+              >
+                <div
+                  style={{
+                    width: "4%",
+                    backgroundColor: "#f0a6a7",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "5%",
+                    backgroundColor: "#eb8283",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "7%",
+                    backgroundColor: "#e86e68",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "20%",
+                    backgroundColor: "#dd3c33",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "25%",
+                    backgroundColor: "#f19a24",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "30%",
+                    backgroundColor: "#fbe323",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "3%",
+                    backgroundColor: "#007cba",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "3%",
+                    backgroundColor: "#5caed3",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "2%",
+                    backgroundColor: "#9ec87f",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "1%",
+                    backgroundColor: "#fae966",
+                    border: "2px solid #fff",
+                    height: "40px",
+                  }}
+                ></div>
+              </div>
+              <div
+                className="row row-absolute pr-2 pl-2"
+                style={{
+                  position: "absolute",
+                  top: "-20px",
+                  right: 0,
+                  width: "100%",
+                }}
+              >
+                <div
+                  className="row-dynamic-width"
+                  style={{
+                    height: "38px",
+                    width: noOfHidden + "%",
+                    display: "flex",
+                    flexDirection: "row-reverse",
+                  }}
+                >
+                  <div className="absolute-icon">
+                    <FiMapPin style={{ fontSize: "32px" }} />
+                  </div>
+                </div>
               </div>
             </div>
           </Col>

@@ -3,7 +3,9 @@
   padding-right: 0px !important;
   overflow: hidden;
 }
-.img {
+.text-img,
+.home-img,
+.home-img2 {
   max-width: 100%;
   height: auto;
 }
@@ -17,7 +19,9 @@
   margin-top: 5%;
   padding: 5% 0;
 }
-
+.section2-text {
+  font-size: 1.5rem;
+}
 .section3,
 .section4,
 .section5 {
@@ -40,36 +44,35 @@
 .section3-img {
   padding: 8% 0%;
 }
-.mutemask-img {
-  padding: 0% 0px 0px 40%;
-}
 .aboutart-img {
-  padding: 2% 0px 0px 30%;
+  padding-top: 15%;
 }
 .aboutartist-img {
-  padding: 41% 0px 0px 15%;
+  padding-top: 20%;
 }
 .aboutrarity-img {
-  padding: 47% 0px 0px 13%;
+  padding-top: 16%;
 }
+.bwcolor-img {
+  padding-top: 3%;
+}
+.bwminting-img {
+  padding-top: 18%;
+}
+.randomissuance-img {
+  padding-top: 20%;
+}
+.coloredminting-img {
+  padding-top: 16%;
+}
+.smartcontract-img {
+  padding-top: 19%;
+}
+
 .m-t-1 {
   margin-top: 1rem;
 }
-.bwcolor-img {
-  padding: 0% 27% 0% 0%;
-}
-.bwminting-img {
-  padding: 8% 26% 0% 0%;
-}
-.randomissuance-img {
-  padding: 4% 18% 0% 0%;
-}
-.coloredminting-img {
-  padding: 3% 17% 0% 0%;
-}
-.smartcontract-img {
-  padding: 13% 12% 0% 0%;
-}
+
 .text-direction {
   text-align: right;
 }
@@ -101,4 +104,69 @@
 }
 .bonding-curve-img {
   padding: 2% 60% 0% 0%;
+}
+@media (min-width: 992px) {
+  .mutemask-img {
+    padding: 0% 0px 0px 40%;
+  }
+  .aboutart-img {
+    /* padding: 2% 0px 0px 30%; */
+    padding: 8% 0px 0px 30%;
+  }
+  .aboutartist-img {
+    /* padding: 41% 0px 0px 15%; */
+    padding: 10% 0px 0px 15%;
+  }
+  .aboutrarity-img {
+    /* padding: 47% 0px 0px 13%; */
+    padding: 10% 0px 0px 13%;
+  }
+  .bwcolor-img {
+    padding: 0% 27% 0% 0%;
+  }
+  .bwminting-img {
+    /* padding: 8% 26% 0% 0%; */
+    padding: 10% 26% 0% 0%;
+  }
+  .randomissuance-img {
+    /* padding: 4% 18% 0% 0%; */
+    padding: 12% 18% 0% 0%;
+  }
+  .coloredminting-img {
+    /* padding: 3% 17% 0% 0%; */
+    padding: 9% 17% 0% 0%;
+  }
+  .smartcontract-img {
+    /* padding: 13% 12% 0% 0%; */
+    padding: 11% 12% 0% 0%;
+  }
+}
+@media (max-width: 991px) {
+  .bonding-curve-div {
+    margin-top: 8%;
+  }
+  .bonding-curve-img {
+    padding: 1% 75% 0% 0%;
+  }
+  .section4-inner-div,
+  .inner-div {
+    padding: 4%;
+  }
+}
+@media (max-width: 580px) {
+  .home-img {
+    max-width: 50%;
+  }
+  .home-img2 {
+    max-width: 130%;
+  }
+  .img_center {
+    text-align: center;
+  }
+  .section6 {
+    padding: 0px !important;
+  }
+  .section2-text {
+    font-size: 12px;
+  }
 }

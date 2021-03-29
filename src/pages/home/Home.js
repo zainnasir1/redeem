@@ -41,48 +41,48 @@ const Home = () => {
       <Header />
       <div className="hero-section container-fluid">
         <Row>
-          <Col lg="5">
+          <Col lg="5" md="5" sm="5" xs="5">
             <Row>
-              <Col lg="4">
+              <Col lg="4" md="4" sm="4" xs="4">
                 <img
                   src={img1}
                   alt="Asset1"
-                  className="img display"
+                  className="home-img2 display"
                   style={{ padding: "60% 0%" }}
                 />
               </Col>
-              <Col lg="8">
+              <Col lg="8" md="8" sm="8" xs="8">
                 <img
                   src={img2}
                   alt="Asset2"
-                  className="img"
+                  className="home-img2"
                   style={{ padding: "16% 14% 3%" }}
                 />
-                <img src={img3} alt="Asset3" className="img" />
+                <img src={img3} alt="Asset3" className="home-img2" />
               </Col>
             </Row>
           </Col>
-          <Col lg="7">
+          <Col lg="7" md="7" sm="7" xs="7">
             <Row>
-              <Col lg="5">
-                <img src={img4} alt="Asset4" className="img" />
+              <Col lg="5" md="5" sm="5" xs="5">
+                <img src={img4} alt="Asset4" className="home-img2" />
               </Col>
-              <Col lg="3">
-                <img src={img5} alt="Asset5" className="img" />
+              <Col lg="3" md="3" sm="3" xs="3">
+                <img src={img5} alt="Asset5" className="home-img2" />
               </Col>
-              <Col lg="4">
-                <img src={img6} alt="Asset6" className="img" />
+              <Col lg="4" md="4" sm="4" xs="4">
+                <img src={img6} alt="Asset6" className="home-img2" />
               </Col>
             </Row>
             <Row>
-              <Col lg="3">
-                <img src={img7} alt="Asset7" className="img" />
+              <Col lg="3" md="3" sm="3" xs="3">
+                <img src={img7} alt="Asset7" className="home-img2" />
               </Col>
-              <Col lg="6">
-                <img src={img8} alt="Asset8" className="img" />
+              <Col lg="6" md="6" sm="6" xs="6">
+                <img src={img8} alt="Asset8" className="home-img2" />
               </Col>
-              <Col lg="3">
-                <img src={img9} alt="Asset9" className="img" />
+              <Col lg="3" md="3" sm="3" xs="3">
+                <img src={img9} alt="Asset9" className="home-img2" />
               </Col>
             </Row>
           </Col>
@@ -91,19 +91,19 @@ const Home = () => {
       <div className="section2">
         <Container>
           <Row>
-            <Col lg="4" md="4" sm="2" xs="12">
-              <img src={secimg1} alt="Frame 1" className="img" />
+            <Col lg="4" md="4" sm="4" xs="4">
+              <img src={secimg1} alt="Frame 1" className="home-img2" />
             </Col>
-            <Col lg="4" md="4" sm="2" xs="12">
-              <img src={secimg2} alt="Frame 2" className="img" />
+            <Col lg="4" md="4" sm="4" xs="4">
+              <img src={secimg2} alt="Frame 2" className="home-img2" />
             </Col>
-            <Col lg="4" md="4" sm="2" xs="12">
-              <img src={secimg3} alt="Frame 3" className="img" />
+            <Col lg="4" md="4" sm="4" xs="4">
+              <img src={secimg3} alt="Frame 3" className="home-img2" />
             </Col>
           </Row>
           <Row>
-            <Col className="text-center">
-              <span style={{ fontSize: "1.5rem" }}>
+            <Col className="text-center ">
+              <span className="section2-text">
                 A unique digital art collection living in the blockchain.
                 <br />
                 100 mutemasks to be distributed employing proof of ownership.
@@ -114,43 +114,34 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      <Carousel>
+      <Carousel interval={null} indicators={false}>
         <Carousel.Item>
           <div className="section3 container-fluid">
             <div className="inner-div ">
               <Row>
-                <Col lg="3">
+                <Col lg="3" md="3" sm="12" xs="12" className="img_center">
                   <img
                     src={secimg4}
                     alt="Asset 4"
-                    className="img section3-img"
+                    className="home-img section3-img"
                   />
                 </Col>
-                <Col lg="9">
+                <Col lg="9" md="9" sm="12" xs="12">
                   <Row>
-                    <Col lg="3" style={{ borderRight: "4px solid black" }}>
+                    <Col
+                      lg="3"
+                      md="3"
+                      sm="3"
+                      xs="3"
+                      style={{ borderRight: "4px solid black" }}
+                    >
                       <img
                         src={secimg5}
                         alt="Mute Masks"
-                        className="img mutemask-img"
-                      />
-                      <img
-                        src={secimg6}
-                        alt="About the Art"
-                        className="img aboutart-img"
-                      />
-                      <img
-                        src={secimg7}
-                        alt="About the artist"
-                        className="img aboutartist-img"
-                      />
-                      <img
-                        src={secimg8}
-                        alt="About the rarity"
-                        className="img aboutrarity-img"
+                        className="text-img mutemask-img"
                       />
                     </Col>
-                    <Col lg="9">
+                    <Col lg="9" md="9" sm="9" xs="9">
                       <div>
                         <span>
                           Mutemask is a new{" "}
@@ -161,6 +152,23 @@ const Home = () => {
                           Tokens.
                         </span>
                       </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col
+                      lg="3"
+                      md="3"
+                      sm="3"
+                      xs="3"
+                      style={{ borderRight: "4px solid black" }}
+                    >
+                      <img
+                        src={secimg6}
+                        alt="About the Art"
+                        className="text-img aboutart-img"
+                      />
+                    </Col>
+                    <Col lg="9" md="9" sm="9" xs="9">
                       <div className="m-t-1">
                         <span>
                           All Mutemasks are based on identifiable line paths
@@ -181,6 +189,23 @@ const Home = () => {
                           closed boundaries of the frames.
                         </span>
                       </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col
+                      lg="3"
+                      md="3"
+                      sm="3"
+                      xs="3"
+                      style={{ borderRight: "4px solid black" }}
+                    >
+                      <img
+                        src={secimg7}
+                        alt="About the artist"
+                        className="text-img aboutartist-img"
+                      />
+                    </Col>
+                    <Col lg="9" md="9" sm="9" xs="9">
                       <div className="m-t-1">
                         <span>
                           Mutemasks were commisioned to a visionary with a{" "}
@@ -197,6 +222,23 @@ const Home = () => {
                           <br /> life of every human being."
                         </span>
                       </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col
+                      lg="3"
+                      md="3"
+                      sm="3"
+                      xs="3"
+                      style={{ borderRight: "4px solid black" }}
+                    >
+                      <img
+                        src={secimg8}
+                        alt="About the rarity"
+                        className="text-img aboutrarity-img"
+                      />
+                    </Col>
+                    <Col lg="9" md="9" sm="9" xs="9">
                       <div className="m-t-1">
                         <span>
                           Mutemasks were created using a set items that give the
@@ -218,12 +260,12 @@ const Home = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div className="section3 container-fluid">
+          <div className="section4 container-fluid">
             <div className="section4-inner-div ">
               <Row>
-                <Col lg="9">
+                <Col lg="9" md="9" sm="12" xs="12">
                   <Row>
-                    <Col lg="9">
+                    <Col lg="9" md="9" sm="9" xs="9">
                       <div className="text-direction">
                         <span>
                           Each mutemask is originated in{" "}
@@ -235,6 +277,24 @@ const Home = () => {
                           <br /> versions follow the same bonding curve.
                         </span>
                       </div>
+                    </Col>
+                    <Col
+                      lg="3"
+                      md="3"
+                      sm="3"
+                      xs="3"
+                      style={{ borderLeft: "4px solid black" }}
+                    >
+                      <img
+                        src={secimg9}
+                        alt="B&W vs Color"
+                        className="text-img bwcolor-img"
+                      />
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col lg="9" md="9" sm="9" xs="9">
                       <div className="m-t-1 text-direction">
                         <span>
                           Black and whitemasks will be open for redemption until
@@ -247,6 +307,24 @@ const Home = () => {
                           wallet section.
                         </span>
                       </div>
+                    </Col>
+                    <Col
+                      lg="3"
+                      md="3"
+                      sm="3"
+                      xs="3"
+                      style={{ borderLeft: "4px solid black" }}
+                    >
+                      <img
+                        src={secimg10}
+                        alt="B&W Minting"
+                        className="text-img bwminting-img"
+                      />
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col lg="9" md="9" sm="9" xs="9">
                       <div className="m-t-1 text-direction">
                         <span>
                           The distribution of black and white masks follows a
@@ -261,6 +339,24 @@ const Home = () => {
                           that instantly mints a random art.
                         </span>
                       </div>
+                    </Col>
+                    <Col
+                      lg="3"
+                      md="3"
+                      sm="3"
+                      xs="3"
+                      style={{ borderLeft: "4px solid black" }}
+                    >
+                      <img
+                        src={secimg11}
+                        alt="Random Issuance"
+                        className="text-img randomissuance-img"
+                      />
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col lg="9" md="9" sm="9" xs="9">
                       <div className="m-t-1 text-direction">
                         <span>
                           Colored masks minting process will also begin at{" "}
@@ -278,6 +374,24 @@ const Home = () => {
                           acquisition option of the same mask in color.
                         </span>
                       </div>
+                    </Col>
+                    <Col
+                      lg="3"
+                      md="3"
+                      sm="3"
+                      xs="3"
+                      style={{ borderLeft: "4px solid black" }}
+                    >
+                      <img
+                        src={secimg12}
+                        alt="Colored Minting"
+                        className="text-img coloredminting-img"
+                      />
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col lg="9" md="9" sm="9" xs="9">
                       <div className="m-t-1 text-direction">
                         <span>
                           The authentic mutemask files are stored in the
@@ -295,40 +409,26 @@ const Home = () => {
                         </span>
                       </div>
                     </Col>
-                    <Col lg="3" style={{ borderLeft: "4px solid black" }}>
-                      <img
-                        src={secimg9}
-                        alt="B&W vs Color"
-                        className="img bwcolor-img"
-                      />
-                      <img
-                        src={secimg10}
-                        alt="B&W Minting"
-                        className="img bwminting-img"
-                      />
-                      <img
-                        src={secimg11}
-                        alt="Random Issuance"
-                        className="img randomissuance-img"
-                      />
-                      <img
-                        src={secimg12}
-                        alt="Colored Minting"
-                        className="img coloredminting-img"
-                      />
+                    <Col
+                      lg="3"
+                      md="3"
+                      sm="3"
+                      xs="3"
+                      style={{ borderLeft: "4px solid black" }}
+                    >
                       <img
                         src={secimg13}
                         alt="Smart Contract"
-                        className="img smartcontract-img"
+                        className="text-img smartcontract-img"
                       />
                     </Col>
                   </Row>
                 </Col>
-                <Col lg="3">
+                <Col lg="3" md="3" sm="12" xs="12" className="img_center">
                   <img
                     src={secimg14}
                     alt="Asset 4"
-                    className="img section3-img"
+                    className="home-img section3-img"
                   />
                 </Col>
               </Row>
@@ -339,11 +439,15 @@ const Home = () => {
           <div className="section5 container-fluid">
             <div className="section5-inner-div ">
               <Row className="section5-row">
-                <Col lg="4">
-                  <img src={secimg15} alt="Black and white" className="img " />
+                <Col lg="4" md="4 " sm="4" xs="6">
+                  <img
+                    src={secimg15}
+                    alt="Black and white"
+                    className="home-img "
+                  />
                 </Col>
-                <Col lg="4">
-                  <img src={secimg16} alt="Colored" className="img " />
+                <Col lg="4" md="4 " sm="4" xs="6">
+                  <img src={secimg16} alt="Colored" className="home-img " />
                 </Col>
               </Row>
             </div>
@@ -353,15 +457,15 @@ const Home = () => {
       <div className="section6 container-fluid">
         <div className="section6-inner-div ">
           <Row>
-            <Col lg="8">
-              <img src={secimg17} alt="Black and white" className="img " />
+            <Col lg="8" md="8" sm="12" className="img_center">
+              <img src={secimg17} alt="Black and white" className="home-img " />
             </Col>
-            <Col lg="4">
+            <Col lg="4" md="12" sm="12">
               <div className="bonding-curve-div">
                 <img
                   src={secimg18}
                   alt="Bonding Curve"
-                  className="img bonding-curve-img"
+                  className="text-img bonding-curve-img"
                 />
                 <div>
                   <p>
