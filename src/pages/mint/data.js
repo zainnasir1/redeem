@@ -1,4 +1,4 @@
-export default {
+const data = {
   mintData: [
     {
       id: "1",
@@ -802,3 +802,4 @@ export default {
     },
   ],
 };
+export default data;

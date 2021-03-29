@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Row, Col, Table } from "react-bootstrap";
 import Header from "../../components/header/Header";
@@ -71,8 +72,9 @@ const GalleryDetail = () => {
                 </tr>
               </thead>
               <tbody>
-                {transactionHistory.map((trh) => (
+                {transactionHistory.map((trh, i) => (
                   <tr
+                    key={i}
                     className={
                       trh.type === "Sold"
                         ? "sold"

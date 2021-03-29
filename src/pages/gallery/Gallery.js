@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Header from "../../components/header/Header";
 import "./Gallery.css";
@@ -12,8 +12,8 @@ const Gallery = () => {
       <Header />
       <div className="container-fluid" style={{ padding: "3% 4%" }}>
         <Row>
-          {galleryData.map((data) => (
-            <Col lg="3" md="4" sm="6" xs="6" className="gallery">
+          {galleryData.map((data, i) => (
+            <Col lg="3" md="4" sm="6" xs="6" className="gallery" key={i}>
               <Link to={`/gallery-detail/${data.id}`}>
                 <img src={prod} alt={data.title} className="gallery-img" />
               </Link>
