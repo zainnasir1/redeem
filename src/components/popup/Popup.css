@@ -1,8 +1,20 @@
+.popup-head {
+  background-color: #fbb03b;
+  padding: 6px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
 .popup {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 225px;
+  height: 175px;
   top: -154px;
   left: -123px;
-  background-color: black;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+.stats-img {
+  width: 28px;
+  height: 19px;
 }
