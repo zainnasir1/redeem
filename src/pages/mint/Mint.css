@@ -16,7 +16,33 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
+  width: 100%;
 }
 .boxes-container {
-  margin: 31% 0 0 32% !important;
+  position: absolute;
+  /* margin: 31% 0 0 38% !important; */
+  width: 80%;
+  top: 17.2%;
+  left: 35.5%;
+}
+.boxes-container2 {
+  width: 56%;
+  top: 5.8%;
+  right: 30.5%;
+  position: absolute;
+  top: 18%;
+}
+.outerdiv {
+  width: 40px;
+  height: 40px;
+}
+.inner-div,
+.innerdiv {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

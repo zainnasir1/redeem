@@ -481,6 +481,10 @@ const Mint = () => {
             </div>
           </Col>
         </Row>
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </>
   );

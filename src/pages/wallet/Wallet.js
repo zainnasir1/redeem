@@ -87,7 +87,7 @@ const Wallet = () => {
                 <img
                   src={muteMasks.img}
                   alt="Mutemask"
-                  className="wallet-img"
+                  className="wallet-img "
                 />
                 <div className="cards-info">
                   <span>

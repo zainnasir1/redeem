@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     id: "001",
     img: "./assets/Home2/Frame 1.png",

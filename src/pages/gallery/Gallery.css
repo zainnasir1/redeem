@@ -69,4 +69,26 @@
   .cards-info {
     margin-top: -0.7rem;
   }
+  .wallet {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wallet-img {
+    max-width: 70%;
+    min-width: 60%;
+  }
+  .redeem-btn {
+    margin-left: -15px;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    padding: 10px 25px !important;
+  }
+  .wallet span,
+  .gallery span {
+    font-size: 15px;
+  }
 }
