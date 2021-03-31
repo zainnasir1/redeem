@@ -6,6 +6,7 @@ import Gallery from "./pages/gallery/Gallery";
 import Wallet from "./pages/wallet/Wallet";
 import GalleryDetail from "./pages/galleryDetail/GalleryDetail";
 import Popup from "./components/popup/Popup";
+// import "./App.css";
 
 function App() {
   return (

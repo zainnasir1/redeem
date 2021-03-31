@@ -18,6 +18,7 @@ const Gallery = () => {
                 <img src={prod} alt={data.title} className="gallery-img" />
               </Link>
               <div className="cards-info">
+                <b>Title:&nbsp;</b>
                 <span>Last Price:&nbsp;{data.lastPrice}</span>
                 <span>Date:&nbsp;{data.date}</span>
                 <span style={{ wordBreak: "break-all" }}>

@@ -47,10 +47,11 @@ const GalleryDetail = () => {
         style={{ padding: "0% 5% 6% 5%", backgroundColor: "#cccccc" }}
       >
         <Row className="gallery-detail-row">
-          <Col lg="4" md="4" sm="12" xs="12">
+          <Col lg="4" md="4" sm="6" xs="12" className="center_img">
             <img src={img1} alt="Mutemask" className="detail-img" />
           </Col>
           <Col lg="8" md="8" sm="12" xs="12" className="gallery-detail">
+            <h3 className="d-flex justify-content-center">Title</h3>
             <span>
               <p>Owned by:&nbsp;</p>
               <span style={{ lineBreak: "anywhere" }}>{owner}</span>

@@ -3,13 +3,17 @@
   font-size: 12px;
   font-weight: 500;
 }
-
+.wallet b,
+.gallery b {
+  font-size: 15px !important;
+}
 .wallet-img,
 .gallery-img {
   max-width: 100%;
   height: auto;
 }
 .cards-info {
+  font-family: "Noto Sans JP";
   display: flex;
   flex-direction: column;
   margin-bottom: 1.4rem;
@@ -21,12 +25,14 @@
   justify-content: space-between;
   /* padding: 22px 15px; */
   padding: 3% 3% 1.5% 1.5%;
+  font-family: "Noto Sans JP";
 }
 .mask-wallet span {
   display: flex;
+  font-weight: 300;
 }
 .mask-wallet span > p {
-  font-weight: 500;
+  font-weight: 600;
 }
 .redeem-btn {
   background-color: #fff !important;

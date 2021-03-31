@@ -1,22 +1,32 @@
 .popup-head {
+  font-family: "Less";
   background-color: #fbb03b;
-  padding: 6px;
+  padding: 10px 8px 1px 8px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+.popup-head span {
+  font-weight: 600;
 }
 .popup {
   position: absolute;
   width: 300px;
-  height: 220px;
+  height: 230px;
   top: -250px;
   left: -185px;
   background-color: #fff;
   border: 1px solid black;
   border-radius: 12px;
 }
+.popup-body {
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+}
 .stats-img {
   width: 28px;
   height: 19px;
+  margin-left: 1rem;
+  cursor: pointer;
 }
 .stats-btn {
   border: 1px solid #000;

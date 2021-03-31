@@ -1,13 +1,27 @@
+/* @font-face {
+  font-family: "Noto Sans JP";
+  src: */
+/* url(./assets/fonts/NotoSansJP-Regular.woff2) format("woff2"),
+    url(./assets/fonts/NotoSansJP-Regular.woff) format("woff"), */
+/* url("./assets/fonts/NotoSansJP-Regular.ttf"); */
+/* format("truetype"); */
+/* } */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap");
+@font-face {
+  font-family: "Less";
+  src: url("./assets/fonts/Less.otf") format("truetype");
 }

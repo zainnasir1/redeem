@@ -13,11 +13,15 @@ import img6 from "../../assets/Home1/01Asset85.png";
 import img7 from "../../assets/Home1/01Asset82.png";
 import img8 from "../../assets/Home1/01Asset84.png";
 import img9 from "../../assets/Home1/01Asset86.png";
+import img10 from "../../assets/Home1/01Asset87.png";
 
 import secimg1 from "../../assets/Home2/001.png";
 import secimg2 from "../../assets/Home2/002.png";
 import secimg3 from "../../assets/Home2/003.png";
 import secimg from "../../assets/Home2/005.png";
+
+import leftarrow from "../../assets/Home3/01Asset97.png";
+import rightarrow from "../../assets/Home3/01Asset98.png";
 
 import secimg4 from "../../assets/Home3/01Asset99.png";
 import secimg5 from "../../assets/Home3/01Asset100.png";
@@ -45,22 +49,33 @@ const Home = () => {
         <Row>
           <Col lg="5" md="5" sm="5" xs="5">
             <Row>
-              <Col lg="4" md="4" sm="4" xs="4">
+              <Col lg="5" md="5" sm="5" xs="5">
                 <img
                   src={img1}
                   alt="Asset1"
                   className="home-img2 display"
-                  style={{ padding: "60% 0%" }}
+                  style={{ padding: "23% 18% 0% 0%" }}
+                />
+                <img
+                  src={img10}
+                  alt="Asset10"
+                  className="home-img2 display"
+                  style={{ padding: "40% 0% 0% 0%" }}
                 />
               </Col>
-              <Col lg="8" md="8" sm="8" xs="8">
+              <Col lg="7" md="7" sm="7" xs="7">
                 <img
                   src={img2}
                   alt="Asset2"
                   className="home-img2"
-                  style={{ padding: "16% 14% 3%" }}
+                  style={{ padding: "15% 8% 3%" }}
                 />
-                <img src={img3} alt="Asset3" className="home-img2" />
+                <img
+                  src={img3}
+                  alt="Asset3"
+                  className="home-img2"
+                  style={{ padding: "9% 0% 0% 17%" }}
+                />
               </Col>
             </Row>
           </Col>
@@ -78,17 +93,33 @@ const Home = () => {
             </Row>
             <Row>
               <Col lg="3" md="3" sm="3" xs="3">
-                <img src={img7} alt="Asset7" className="home-img2" />
+                <img
+                  src={img7}
+                  alt="Asset7"
+                  className="home-img2"
+                  style={{ padding: "19% 0% 0% 17%" }}
+                />
               </Col>
               <Col lg="6" md="6" sm="6" xs="6">
-                <img src={img8} alt="Asset8" className="home-img2" />
+                <img
+                  src={img8}
+                  alt="Asset8"
+                  className="home-img2"
+                  style={{ padding: "9% 7% 0% 7%" }}
+                />
               </Col>
               <Col lg="3" md="3" sm="3" xs="3">
-                <img src={img9} alt="Asset9" className="home-img2" />
+                <img
+                  src={img9}
+                  alt="Asset9"
+                  className="home-img2"
+                  style={{ padding: "34% 0% 0% 18%" }}
+                />
               </Col>
             </Row>
           </Col>
         </Row>
+        <div style={{ height: "64px", background: "#1b1b1b" }}></div>
       </div>
       <div className="section2">
         <Container>
@@ -121,7 +152,13 @@ const Home = () => {
           <div className="section3 container-fluid">
             <div className="inner-div ">
               <Row>
-                <Col lg="3" md="3" sm="12" xs="12" className="img_center">
+                <Col
+                  lg="3"
+                  md="3"
+                  sm="12"
+                  xs="12"
+                  className="img_center d-flex align-items-center"
+                >
                   <img
                     src={secimg4}
                     alt="Asset 4"
@@ -426,11 +463,17 @@ const Home = () => {
                     </Col>
                   </Row>
                 </Col>
-                <Col lg="3" md="3" sm="12" xs="12" className="img_center">
+                <Col
+                  lg="3"
+                  md="3"
+                  sm="12"
+                  xs="12"
+                  className="img_center d-flex align-items-center"
+                >
                   <img
                     src={secimg14}
                     alt="Asset 4"
-                    className="home-img section3-img"
+                    className="home-img section3-img "
                   />
                 </Col>
               </Row>
@@ -440,6 +483,10 @@ const Home = () => {
         <Carousel.Item>
           <div className="section5 container-fluid">
             <div className="section5-inner-div ">
+              <span className="text-white section5-text">
+                Minting a random B&W mask allows you to either trade it or use
+                it as a key to mint its colored version in the wallet section
+              </span>
               <Row className="section5-row">
                 <Col lg="4" md="4 " sm="4" xs="6">
                   <img
@@ -462,7 +509,7 @@ const Home = () => {
             <Col lg="8" md="8" sm="12" className="img_center">
               <img src={secimg17} alt="Black and white" className="home-img " />
             </Col>
-            <Col lg="4" md="12" sm="12">
+            <Col lg="4" md="12" sm="12" className="d-flex align-items-center">
               <div className="bonding-curve-div">
                 <img
                   src={secimg18}

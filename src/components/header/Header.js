@@ -16,7 +16,7 @@ const Header = () => {
       <Navbar.Brand href="/">
         <img src={icon1} alt="logo" className="logo v-align mr-4" />
         <span className="v-align">MuteMasks</span>
-        <img src={icon2} alt="logo" className="logo-icons ml-3" />
+        <img src={icon2} alt="logo" className="twitter-icon ml-3" />
         <img src={icon3} alt="logo" className="logo-icons ml-3" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

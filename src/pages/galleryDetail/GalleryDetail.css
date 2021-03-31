@@ -1,15 +1,22 @@
 .gallery-detail-row {
   background-color: #fff;
   padding: 5%;
+  font-family: "Noto Sans JP";
+}
+.gallery-detail h3 {
+  font-weight: 600 !important;
 }
 .gallery-detail span {
   display: flex;
   justify-content: center;
+  color: #2d2d2d;
+  font-size: 20px;
+  letter-spacing: 0.2;
 }
-.gallery-detail span,
+/* .gallery-detail span, */
 .gallery-detail span > p {
   text-shadow: 0 0 black;
-  font-size: larger;
+  font-size: 21px;
 }
 .detail-img {
   max-width: 100%;
@@ -24,6 +31,7 @@
 .transaction-table {
   border-spacing: 0px 12px;
   border-collapse: separate;
+  padding-right: 2%;
 }
 .transaction-table th {
   font-weight: 500;
@@ -49,11 +57,25 @@
 .bid,
 .offered,
 .claimed {
-  box-shadow: 12px 5px 12px #818080;
+  /* box-shadow: 12px 5px 12px #818080; */
+  box-shadow: 8px 6px 12px #949393;
   border-radius: 50px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .gallery-detail {
-    margin-top: 6%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .gallery-detail {
+    margin-top: 3%;
+  }
+  .center_img {
+    width: 99%;
+    margin: auto;
+  }
+  .gallery-detail span,
+  .gallery-detail span > p {
+    font-size: large;
   }
 }

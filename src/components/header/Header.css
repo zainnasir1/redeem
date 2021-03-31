@@ -2,20 +2,26 @@
   position: sticky !important;
   top: 0;
   z-index: 1000;
+  font-family: "Less";
 }
 .navbar a {
-  color: black;
-  font-weight: 500;
+  color: #232323;
+  font-size: 16px;
+  font-weight: 600;
 }
 .bg-header {
-  background-color: #cccccc !important;
+  background-color: #f2f2f2 !important;
 }
 .logo {
   width: 28px;
   margin-left: 18%;
 }
 .logo-icons {
+  width: 23px;
+}
+.twitter-icon {
   width: 22px;
+  height: 15px;
 }
 .v-align {
   vertical-align: middle;

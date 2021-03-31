@@ -62,7 +62,7 @@ const Wallet = () => {
             <span style={{ lineBreak: "anywhere" }}>{yourWallet}</span>
           </span>
           <span>
-            <p>Owned Mutemasks:</p>&nbsp;{ownedMutemasks}
+            <p>Owned Mutemasks:</p>&nbsp;<span>{ownedMutemasks}</span>
           </span>
         </div>
         <Row>
@@ -90,6 +90,7 @@ const Wallet = () => {
                   className="wallet-img "
                 />
                 <div className="cards-info">
+                  <b>Title:&nbsp;</b>
                   <span>
                     Acquisition Price:&nbsp;{muteMasks.acquisitionPrice}
                   </span>

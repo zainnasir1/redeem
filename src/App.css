@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+/* @font-face {
+  font-family: "Noto Sans JP";
+  src: url(./assets/fonts/NotoSansJP-Regular.woff2) format("woff2"),
+    url(./assets/fonts/NotoSansJP-Regular.woff) format("woff"),
+    url("./assets/fonts/NotoSansJP-Regular.ttf") format("truetype");
+} */
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +41,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+.fw-300 {
+  font-weight: 300 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
 }
