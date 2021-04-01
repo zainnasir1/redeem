@@ -116,18 +116,23 @@
 .bonding-curve-img {
   padding: 2% 60% 0% 0%;
 }
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 0.8 !important;
+}
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 130px !important;
-  height: 130px !important;
+  height: 129px !important;
 }
 .carousel-control-prev-icon {
-  /* background: url("../../assets/Home3/01Asset97.png") !important; */
+  background: url("../../assets/Home3/previous.png") !important;
   margin-right: 43%;
+  padding-right: 68%;
 }
 .carousel-control-next-icon {
-  /* background: url("../../assets/Home3/01Asset98.png") !important; */
-  margin-left: 43%;
+  background: url("../../assets/Home3/next.png") !important;
+  margin-left: 44%;
 }
 .section3 span,
 .section4 span,
