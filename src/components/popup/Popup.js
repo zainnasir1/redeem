@@ -57,13 +57,18 @@ const Popup = () => {
           <div className="popup">
             <div className="popup-head">
               <div
-                className="d-flex align-items-center mb-3"
+                className="d-flex align-items-center"
                 style={{ justifyContent: "space-between" }}
               >
                 <span>Statistics</span>
                 <div>
                   <img src={img1} alt="twit" className="stats-img" />
-                  <img src={img2} alt="dots" className="stats-img" />
+                  <img
+                    src={img2}
+                    alt="dots"
+                    className="stats-img"
+                    style={{ height: "16px" }}
+                  />
                   <BsBoxArrowInDownLeft
                     className="stats-img"
                     onClick={closePopup}
@@ -132,7 +137,7 @@ const Popup = () => {
           </div>
         )}
         <button className="stats-btn" onClick={openPopup}>
-          Live Stats <BsInfoCircleFill color="red" />
+          Live Stats <BsInfoCircleFill className="info-icon" />
         </button>
       </div>
     </div>

@@ -20,9 +20,6 @@ import secimg2 from "../../assets/Home2/002.png";
 import secimg3 from "../../assets/Home2/003.png";
 import secimg from "../../assets/Home2/005.png";
 
-import leftarrow from "../../assets/Home3/01Asset97.png";
-import rightarrow from "../../assets/Home3/01Asset98.png";
-
 import secimg4 from "../../assets/Home3/01Asset99.png";
 import secimg5 from "../../assets/Home3/01Asset100.png";
 import secimg6 from "../../assets/Home3/01Asset101.png";
@@ -149,7 +146,7 @@ const Home = () => {
       </div>
       <Carousel interval={null} indicators={false}>
         <Carousel.Item>
-          <div className="section3 container-fluid">
+          <div className="section3 container-fluid desktop">
             <div className="inner-div ">
               <Row>
                 <Col
@@ -297,9 +294,136 @@ const Home = () => {
               </Row>
             </div>
           </div>
+
+          {/* For Mobile */}
+          <div className="section3 container-fluid mobile">
+            <div className="inner-div ">
+              <Row>
+                <Col
+                  lg="3"
+                  md="3"
+                  sm="12"
+                  xs="12"
+                  className="img_center d-flex align-items-center"
+                >
+                  <img
+                    src={secimg4}
+                    alt="Asset 4"
+                    className="home-img section3-img"
+                  />
+                </Col>
+                <Col lg="9" md="9" sm="12" xs="12">
+                  <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                      <img
+                        src={secimg5}
+                        alt="Mute Masks"
+                        className="text-img mutemask-img"
+                      />
+                    </Col>
+                    <Col xs="12">
+                      <div className="section3-text">
+                        <span>
+                          Mutemask is a new{" "}
+                          <b>digital celebration of attires;</b>
+                          <br />a rare collection of 100 -and only 100- masks
+                          stored in the Ethereum
+                          <br /> chain in the form of singular Non-Fungible
+                          Tokens.
+                        </span>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                      <img
+                        src={secimg6}
+                        alt="About the Art"
+                        className="text-img aboutart-img"
+                      />
+                    </Col>
+                    <Col xs="12">
+                      <div className="section3-text">
+                        <span>
+                          All Mutemasks are based on identifiable line paths
+                          that create a<br />
+                          bidimensional static and{" "}
+                          <b>eye-appealing costume. </b>
+                          Each mask leads to
+                          <br />
+                          an eye-to-eye interaction that brings out an unusual
+                          but exciting
+                          <br />
+                          communication between the masterpiece and the
+                          observer, disguising,
+                          <br />
+                          and exposing at the same time, strong emotions that
+                          escape from the
+                          <br />
+                          closed boundaries of the frames.
+                        </span>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                      <img
+                        src={secimg7}
+                        alt="About the artist"
+                        className="text-img aboutartist-img"
+                      />
+                    </Col>
+                    <Col xs="12">
+                      <div className="section3-text">
+                        <span>
+                          Mutemasks were commisioned to a visionary with a{" "}
+                          <b>Phd in fine arts </b>who,
+                          <br />
+                          by now, wishes to remain anonymous. The artist
+                          explores numerous
+                          <br />
+                          lines drawn layer by layer, that, combined with <br />
+                          <b>vibrant live pigments,</b> cover the essence and
+                          complexity of a modern
+                          <br /> yet simple individual: "the way she is
+                          captivated by the uniqueness of the
+                          <br /> life of every human being."
+                        </span>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                      <img
+                        src={secimg8}
+                        alt="About the rarity"
+                        className="text-img aboutrarity-img"
+                      />
+                    </Col>
+                    <Col xs="12">
+                      <div className="section3-text">
+                        <span>
+                          Mutemasks were created using a set items that give the
+                          pieces a{" "}
+                          <b>
+                            touch <br />
+                            of rarity;
+                          </b>{" "}
+                          such elements can be easily identified and are
+                          categorized in the <br />
+                          gallery section.
+                        </span>
+                      </div>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </div>
+          </div>
         </Carousel.Item>
+
         <Carousel.Item>
-          <div className="section4 container-fluid">
+          <div className="section4 container-fluid desktop">
             <div className="section4-inner-div ">
               <Row>
                 <Col lg="9" md="9" sm="12" xs="12">
@@ -479,6 +603,153 @@ const Home = () => {
               </Row>
             </div>
           </div>
+
+          {/* For Mobile */}
+
+          <div className="section4 container-fluid mobile">
+            <div className="section4-inner-div ">
+              <Row>
+                <Col xs="12" className="img_center d-flex align-items-center">
+                  <img
+                    src={secimg14}
+                    alt="Asset 4"
+                    className="home-img section3-img "
+                  />
+                </Col>
+                <Col xs="12">
+                  <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                      <img
+                        src={secimg9}
+                        alt="B&W vs Color"
+                        className="text-img bwcolor-img"
+                      />
+                    </Col>
+                    <Col xs="12">
+                      <div className="section4-text">
+                        <span>
+                          Each mutemask is originated in{" "}
+                          <b>black and white, </b>
+                          which can be
+                          <br />
+                          immediately minted into a colored version. The minting
+                          process of both
+                          <br /> versions follow the same bonding curve.
+                        </span>
+                      </div>
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                      <img
+                        src={secimg10}
+                        alt="B&W Minting"
+                        className="text-img bwminting-img"
+                      />
+                    </Col>
+                    <Col xs="12">
+                      <div className="section4-text">
+                        <span>
+                          Black and whitemasks will be open for redemption until
+                          all arts are
+                          <br />
+                          minted. Beginning at <b>14:00 on April 1st (CST). </b>
+                          As soon as you get your
+                          <br />
+                          minting ticket your B&W mask will be revealed in the
+                          wallet section.
+                        </span>
+                      </div>
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                      <img
+                        src={secimg11}
+                        alt="Random Issuance"
+                        className="text-img randomissuance-img"
+                      />
+                    </Col>
+                    <Col xs="12">
+                      <div className="section4-text">
+                        <span>
+                          The distribution of black and white masks follows a
+                          random process
+                          <br />
+                          where no one knows which mask will be assigned.{" "}
+                          <b>
+                            The user gets a
+                            <br />
+                            number{" "}
+                          </b>
+                          that instantly mints a random art.
+                        </span>
+                      </div>
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                      <img
+                        src={secimg12}
+                        alt="Colored Minting"
+                        className="text-img coloredminting-img"
+                      />
+                    </Col>
+                    <Col xs="12">
+                      <div className="section4-text">
+                        <span>
+                          Colored masks minting process will also begin at{" "}
+                          <b>
+                            14:00 on April 1st
+                            <br />
+                            (CST){" "}
+                          </b>
+                          and will be open until all colored versions are
+                          minted. There is no
+                          <br />
+                          randomization factor here as each B&W mask is a key
+                          that grants the
+                          <br />
+                          acquisition option of the same mask in color.
+                        </span>
+                      </div>
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                      <img
+                        src={secimg13}
+                        alt="Smart Contract"
+                        className="text-img smartcontract-img"
+                      />
+                    </Col>
+                    <Col xs="12">
+                      <div className="section4-text">
+                        <span>
+                          The authentic mutemask files are stored in the
+                          Ethereum chain; what
+                          <br /> you see on the site are simple shots of the
+                          actual masks.{" "}
+                          <b>
+                            Each mask
+                            <br />
+                            is a unique token
+                          </b>{" "}
+                          to which you, and only you, have access.
+                          <br />
+                          0xc2c747e0f7XXXXXXXXXXXXXXXX657a7746928
+                        </span>
+                      </div>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </div>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
           <div className="section5 container-fluid">
@@ -504,7 +775,7 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
       <div className="section6 container-fluid">
-        <div className="section6-inner-div ">
+        <div className="section6-inner-div desktop">
           <Row>
             <Col lg="8" md="8" sm="12" className="img_center">
               <img src={secimg17} alt="Black and white" className="home-img " />
@@ -515,6 +786,59 @@ const Home = () => {
                   src={secimg18}
                   alt="Bonding Curve"
                   className="text-img bonding-curve-img"
+                />
+                <div>
+                  <p>
+                    <b>A Bonding </b>curve has been
+                    <br />
+                    implemented to value all masks.
+                    <br />
+                    Starting with a rare of 1 ETH for
+                    <br />
+                    the first 2 NFT and ending at 16 ETH
+                    <br />
+                    for the final mask.
+                    {/* <br /> */}
+                  </p>
+                  <p>
+                    Numbers within each circle
+                    <br />
+                    represents the <b>quanity of masks</b>
+                    <br />
+                    being offered at the rate (in ETH) pointed
+                    <br />
+                    above such circles.
+                    {/* <br /> */}
+                  </p>
+                  <p>
+                    The <b>same bonding curve </b>is
+                    <br />
+                    employed to follow the minting of
+                    <br />
+                    the colored masks.
+                  </p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
+
+        {/* For Mobile */}
+        <div className="section6-inner-div mobile">
+          <Row>
+            <Col xs="12" className="d-flex justify-content-center">
+              <img
+                src={secimg17}
+                alt="Black and white"
+                className="home-img section6-img"
+              />
+            </Col>
+            <Col xs="12" className="text-center">
+              <div>
+                <img
+                  src={secimg18}
+                  alt="Bonding Curve"
+                  className="text-img bonding-img"
                 />
                 <div>
                   <p>

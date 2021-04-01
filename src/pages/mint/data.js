@@ -30,7 +30,7 @@ const data = {
       status: "show",
       bgColor: "#002a38",
       isSpaces: true,
-      spaces: 3,
+      spaces: 2,
     },
     {
       id: "5",
@@ -318,7 +318,7 @@ const data = {
       status: "show",
       bgColor: "#002a38",
       isSpaces: true,
-      spaces: 3,
+      spaces: 2,
     },
     {
       id: "41",
@@ -382,7 +382,7 @@ const data = {
       status: "show",
       bgColor: "#ff8332",
       isSpaces: true,
-      spaces: 3,
+      spaces: 1,
     },
     {
       id: "49",
@@ -398,7 +398,7 @@ const data = {
       status: "show",
       bgColor: "#fea82c",
       isSpaces: true,
-      spaces: 2,
+      spaces: 0,
     },
     {
       id: "51",

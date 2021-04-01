@@ -126,13 +126,13 @@
   height: 129px !important;
 }
 .carousel-control-prev-icon {
-  background: url("../../assets/Home3/previous.png") !important;
-  margin-right: 43%;
-  padding-right: 68%;
+  background: url("../../assets/Home3/previous.png") no-repeat !important;
+  /* margin-right: 50%; */
+  /* padding-right: 68%; */
 }
 .carousel-control-next-icon {
-  background: url("../../assets/Home3/next.png") !important;
-  margin-left: 44%;
+  background: url("../../assets/Home3/next.png") no-repeat !important;
+  margin-left: 50%;
 }
 .section3 span,
 .section4 span,
@@ -144,6 +144,14 @@
 .section6 p b {
   font-weight: 600;
 }
+
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .mutemask-img {
     padding: 0% 0px 0px 40%;
@@ -194,8 +202,15 @@
   }
 }
 @media (max-width: 580px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
   .home-img {
     max-width: 50%;
+    margin: auto;
   }
   .home-img2 {
     max-width: 130%;
@@ -208,5 +223,56 @@
   }
   .section2-text {
     font-size: 12px;
+  }
+
+  .mutemask-img,
+  .aboutrarity-img,
+  .aboutartist-img,
+  .aboutart-img,
+  .bwcolor-img,
+  .bwminting-img,
+  .randomissuance-img,
+  .coloredminting-img,
+  .smartcontract-img,
+  .bonding-img {
+    max-width: 50%;
+    margin-top: 36px;
+    padding-top: 3%;
+  }
+  .section3-text,
+  .section4-text {
+    text-align: center;
+    font-size: 13px;
+    margin-top: -12px;
+  }
+  .section5-text {
+    font-size: 6px;
+    font-weight: 100;
+  }
+  .section6-img {
+    margin-top: 5%;
+    max-width: 95%;
+  }
+  .bonding-curve-div {
+    border-left: none;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 130px !important;
+    height: 129px !important;
+  }
+  .carousel-control-prev-icon {
+    background: url("../../assets/Home3/left-arrow.png") no-repeat !important;
+    /* margin-right: 50%; */
+    /* padding-right: 68%; */
+  }
+  .carousel-control-next-icon {
+    background: url("../../assets/Home3/right-arrow.png") no-repeat !important;
+    margin-left: 50%;
+  }
+}
+@media (min-width: 1500px) {
+  .section5-text {
+    padding-top: 2.4%;
   }
 }
