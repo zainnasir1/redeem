@@ -840,7 +840,7 @@ const Home = () => {
                   alt="Bonding Curve"
                   className="text-img bonding-img"
                 />
-                <div>
+                <div className="bonding-curve-text">
                   <p>
                     <b>A Bonding </b>curve has been
                     <br />

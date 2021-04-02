@@ -201,7 +201,7 @@
     padding: 4%;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 585px) {
   .desktop {
     display: none;
   }
@@ -236,14 +236,16 @@
   .smartcontract-img,
   .bonding-img {
     max-width: 50%;
+    max-height: 50%;
     margin-top: 36px;
     padding-top: 3%;
   }
   .section3-text,
-  .section4-text {
+  .section4-text,
+  .bonding-curve-text {
     text-align: center;
     font-size: 13px;
-    margin-top: -12px;
+    margin-top: -6%;
   }
   .section5-text {
     font-size: 6px;

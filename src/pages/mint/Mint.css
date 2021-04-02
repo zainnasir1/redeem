@@ -48,7 +48,6 @@
 }
 .minting-instructions-div {
   font-family: "Noto Sans JP";
-  margin-top: 25%;
   border-left: 4px solid black;
   padding-left: 4%;
   padding-bottom: 0.1%;
@@ -58,4 +57,43 @@
 }
 .minting-instructions-div p > b {
   font-weight: 600;
+}
+.bars-padding {
+  padding: 3% 10%;
+}
+.mobile-mint {
+  display: none !important;
+}
+.desktop-mint {
+  display: flex !important;
+}
+@media (max-width: 992px) {
+  .overflow-bg {
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 585px) {
+  .mobile-mint {
+    display: flex !important;
+  }
+  .desktop-mint {
+    display: none !important;
+  }
+  .minting-instructions-div {
+    border-left: none;
+  }
+  .mint-img-mobile {
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 36px;
+    padding-top: 3%;
+  }
+  .mint-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: -6%;
+  }
+  .bars-padding {
+    padding: 0px;
+  }
 }

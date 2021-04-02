@@ -162,7 +162,7 @@ const Mint = () => {
   return (
     <>
       <Header />
-      <div className="container-fluid">
+      <div className="container-fluid overflow-bg">
         <Row>
           <Col lg="8">
             <div className="row mint-bg">
@@ -327,53 +327,99 @@ const Mint = () => {
               </div>
             </div>
           </Col>
-          <Col lg="4" className="d-flex align-items-center">
-            <div className="minting-instructions-div">
-              <img
-                src={img2}
-                alt="Minting Instructions"
-                className="mint-img minting-instructions-img"
-              />
-              <div>
-                <p>
-                  <b>100</b>
-                  <br />
-                  <b>mutemasks</b> have been created,
-                  <br />
-                  each of them has been assigned to
-                  <br />
-                  a specific number displayed in the
-                  <br />
-                  frame on the left.
-                </p>
-                <p>
-                  Redeeming a number grants you with
-                  <br />
-                  an <b>awe-inspiring</b> mutemask,
-                  <br />
-                  which will be revealed after the
-                  <br />
-                  minting has been completed.
-                </p>
-                <p>
-                  Only big colored boxes are
-                  <br />
-                  eligible for minting. After the
-                  <br />
-                  process starts, boxes being minted
-                  <br />
-                  will become unavailable by
-                  <br />
-                  having their <b>numbers disappeared.</b>
-                </p>
+          <Col lg="4" className="desktop-mint">
+            <div className="d-flex align-items-center">
+              <div className="minting-instructions-div ">
+                <img
+                  src={img2}
+                  alt="Minting Instructions"
+                  className="mint-img minting-instructions-img"
+                />
+                <div>
+                  <p>
+                    <b>100</b>
+                    <br />
+                    <b>mutemasks</b> have been created,
+                    <br />
+                    each of them has been assigned to
+                    <br />
+                    a specific number displayed in the
+                    <br />
+                    frame on the left.
+                  </p>
+                  <p>
+                    Redeeming a number grants you with
+                    <br />
+                    an <b>awe-inspiring</b> mutemask,
+                    <br />
+                    which will be revealed after the
+                    <br />
+                    minting has been completed.
+                  </p>
+                  <p>
+                    Only big colored boxes are
+                    <br />
+                    eligible for minting. After the
+                    <br />
+                    process starts, boxes being minted
+                    <br />
+                    will become unavailable by
+                    <br />
+                    having their <b>numbers disappeared.</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col lg="4" className="mobile-mint">
+            <div className="d-flex align-items-center">
+              <div className="minting-instructions-div">
+                <img
+                  src={img2}
+                  alt="Minting Instructions"
+                  className="mint-img-mobile"
+                />
+                <div className="min-text">
+                  <p>
+                    <b>100</b>
+                    <br />
+                    <b>mutemasks</b> have been created,
+                    <br />
+                    each of them has been assigned to
+                    <br />
+                    a specific number displayed in the
+                    <br />
+                    frame on the left.
+                  </p>
+                  <p>
+                    Redeeming a number grants you with
+                    <br />
+                    an <b>awe-inspiring</b> mutemask,
+                    <br />
+                    which will be revealed after the
+                    <br />
+                    minting has been completed.
+                  </p>
+                  <p>
+                    Only big colored boxes are
+                    <br />
+                    eligible for minting. After the
+                    <br />
+                    process starts, boxes being minted
+                    <br />
+                    will become unavailable by
+                    <br />
+                    having their <b>numbers disappeared.</b>
+                  </p>
+                </div>
               </div>
             </div>
           </Col>
         </Row>
-        <div style={{ padding: "3% 10%" }}>
+        <div className="bars-padding" style={{ paddingTop: "3%" }}>
           <Bar progress={noOfHidden} data={dataBW} />
         </div>
-        <div style={{ padding: "1% 10%" }}>
+        <div className="bars-padding">
           <Bar data={dataColored} />
           <div
             style={{ paddingLeft: "8px", marginTop: "4px", fontWeight: "500" }}
