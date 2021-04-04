@@ -4,14 +4,14 @@ import { Row, Col } from "react-bootstrap";
 import { FiMapPin } from "react-icons/fi";
 
 const Bar = (props) => {
-  const { progress, data } = props;
+  const { progress, data, height } = props;
 
   return (
     <Row>
-      <Col className="ml-2">
+      <Col xs="12" className="ml-2">
         <div
-          className="row container-row mt-5 pl-2 pr-2"
-          style={{ position: "relative", margin: "0 auto" }}
+          className="row container-row pl-2 pr-2"
+          style={{ position: "relative" }}
         >
           <div
             className="row pl-2 pr-2"
@@ -21,10 +21,10 @@ const Bar = (props) => {
               data.map((ele, i) => {
                 return (
                   <Fragment key={i}>
-                    <div style={{ ...ele, position: "relative" }}>
-                      <div style={{ position: "absolute", top: 40, left: 0 }}>
-                        {ele.value}
-                      </div>
+                    <div
+                      style={{ ...ele, position: "relative", height: height }}
+                    >
+                      <div className="hidden-value-div">{ele.value}</div>
                     </div>
                   </Fragment>
                 );
@@ -35,7 +35,7 @@ const Bar = (props) => {
             style={{
               position: "absolute",
               top: "-20px",
-              right: 0,
+              right: "24px",
               width: "100%",
             }}
           >
@@ -49,10 +49,8 @@ const Bar = (props) => {
               }}
             >
               <div className="position-relative">
-                <FiMapPin style={{ fontSize: "32px" }} />
-                <div style={{ position: "absolute", top: -15, right: -10 }}>
-                  {progress}
-                </div>
+                <FiMapPin className="value-indicator" />
+                <div className="value">{progress}</div>
               </div>
             </div>
           </div>

@@ -2,47 +2,30 @@
   max-width: 100%;
   height: auto;
 }
-
+.outer-row {
+  margin-top: 55px;
+}
 .mint-bg {
-  /* background: url("../../assets/Mint/01Asset17.png"); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  height: 900px;
-  width: 900px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   position: relative;
+  /* padding: 0px 8%; */
+  padding: 0px 0%;
+  margin-left: 13% !important;
+}
+.mint-bg-img {
+  width: 700px;
+  height: 600px;
 }
 .boxes-container {
   position: absolute !important;
-  /* margin: 31% 0 0 38% !important; */
-  /* width: 80%; */
-  /* width: 37%;
-  top: 131px;
-  left: 124px; */
-  width: 430px;
-  top: 131px;
-  left: 85px;
-  /* top: 14.3%;
-  left: 16.5%; */
+  /* background-image: url("../../assets/Mint/bg.jpeg"); */
+  /* background-size: cover; */
+  /* width: 700px;
+  height: 600px; */
 }
-.boxes-container {
-  position: absolute !important;
-  /* margin: 31% 0 0 38% !important; */
-  /* width: 80%; */
-  width: 306px;
-  top: 128px;
-  left: 155px;
-}
-.boxes-container2 {
-  /* width: 56%;
-  top: 5.8%;
-  right: 30.5%;
-  position: absolute !important;
-  top: 18%; */
-  position: absolute;
-  top: 43px;
-  width: 84%;
-  right: -305px;
-}
+
 .minting-instructions-img {
   padding: 2% 55% 0% 0%;
 }
@@ -59,13 +42,47 @@
   font-weight: 600;
 }
 .bars-padding {
-  padding: 3% 10%;
+  padding: 3% 21%;
 }
 .mobile-mint {
   display: none !important;
 }
 .desktop-mint {
   display: flex !important;
+}
+.outer-box,
+.inner-box {
+  width: 70px;
+  height: 60px;
+}
+.inner-box {
+  cursor: pointer;
+}
+.bar-bw-pt {
+  padding-top: 3%;
+  margin-top: 3.5rem;
+}
+.bar-color-pt {
+  margin-top: 1rem;
+}
+.hidden-value-div {
+  position: absolute;
+  top: 27px;
+  left: 0px;
+  font-size: 12px;
+}
+.value-indicator {
+  font-size: 32px;
+}
+.value {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+}
+.colored-label {
+  padding-left: 8px;
+  margin-top: 4px;
+  font-weight: 500;
 }
 @media (max-width: 992px) {
   .overflow-bg {
@@ -94,6 +111,35 @@
     margin-top: -6%;
   }
   .bars-padding {
-    padding: 0px;
+    padding: 0;
+  }
+  .bar-bw-pt {
+    padding-top: 2%;
+    margin-top: 1rem;
+    margin-left: 4%;
+  }
+  .bar-color-pt {
+    margin-top: 3rem;
+    margin-left: 4%;
+  }
+  .mint-bg {
+    margin-left: 0% !important;
+    margin-right: 1% !important;
+  }
+  .hidden-value-div {
+    font-size: 10px;
+  }
+  .value-indicator {
+    font-size: 20px;
+  }
+  .value {
+    top: -10px;
+    right: -10px;
+  }
+  .colored-label {
+    padding-left: 0px;
+    margin-top: -6px;
+    font-weight: 300;
+    font-size: 12px;
   }
 }
